@@ -24,7 +24,7 @@ export default function Home() {
           priority
         />
         <h1 className="text-5xl sm:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-[#fcf300] to-[#ddbc43]">
-          Welcome To Tosibba
+          Welcome To Tosibba Token
         </h1>
 
         <button
