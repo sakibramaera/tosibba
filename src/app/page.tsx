@@ -14,7 +14,7 @@ export default function Home() {
   };
   return (
     <div>
-      <main className="flex flex-col items-center justify-center h-screen gap-10 sm:gap-20 bg-gradient-to-r from-[#070707] to-[#605b4b]">
+      <main className="flex flex-col items-center justify-center h-screen gap-10 sm:gap-10 bg-gradient-to-r from-[#070707] to-[#605b4b]">
         <Image
           className="dark:invert"
           src={TosibbaLogo}
@@ -26,7 +26,9 @@ export default function Home() {
         <h1 className="text-5xl sm:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-[#fcf300] to-[#ddbc43]">
           Welcome To Tosibba Token
         </h1>
-
+        <div className="text-3xl sm:text-7xl py-3 font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#dd6311] to-[#ddbc43] animate-marquee whitespace-nowrap">
+          Coming soon
+        </div>
         <button
           className="flex gap-4 items-center flex-col sm:flex-row"
           onClick={handleDownload}
