@@ -3,15 +3,15 @@ import Image from "next/image";
 import TosibbaLogo from "../assets/images/TosibbaLogo.png";
 
 export default function Home() {
-  // const handleDownload = () => {
-  //   // Creating a temporary link element
-  //   const link = document.createElement("a");
-  //   link.href = "/pdf/Tosibba.pdf"; // Update path
-  //   link.download = "Tosibba.pdf";
-  //   document.body.appendChild(link);
-  //   link.click();
-  //   document.body.removeChild(link);
-  // };
+  const handleDownload = () => {
+    // Creating a temporary link element
+    const link = document.createElement("a");
+    link.href = "/pdf/Tosibba.pdf"; // Update path
+    link.download = "Tosibba.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div>
       <main className="flex flex-col items-center justify-center h-screen gap-10 sm:gap-20 bg-gradient-to-r from-[#070707] to-[#605b4b]">
@@ -27,7 +27,7 @@ export default function Home() {
           Welcome To Tosibba
         </h1>
 
-        {/* <button
+        <button
           className="flex gap-4 items-center flex-col sm:flex-row"
           onClick={handleDownload}
         >
@@ -39,9 +39,9 @@ export default function Home() {
               width={20}
               height={20}
             />
-            Download Pdf
+            Download PDF
           </div>
-        </button> */}
+        </button>
       </main>
     </div>
   );
